@@ -1029,32 +1029,72 @@ textarea.form-control {
 /* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
   .hero-title { font-size: 3rem; }
-  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .about-grid, .contact-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .wheel-container { width: 60vw; }
+  
+  /* Fix contact form padding on tablets */
+  .gsap-reveal[style*="padding: 50px"] { padding: 30px !important; }
 }
 
 @media (max-width: 768px) {
+  /* Navigation */
+  .hamburger { 
+    display: block; 
+    z-index: 1000;
+  }
   .nav-links {
     position: fixed;
-    top: var(--nav-height);
+    top: 0;
     left: -100%;
     width: 100%;
-    height: calc(100vh - var(--nav-height));
-    background: var(--bg-darker);
+    height: 100vh;
+    background: rgba(17, 18, 22, 0.98);
+    backdrop-filter: blur(20px);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: left 0.4s ease;
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
   }
   .nav-links.nav-active { left: 0; }
-  .hamburger { display: block; }
+  .nav-links a { font-size: 1.5rem; margin-bottom: 20px; }
   
+  /* Spacing */
+  .section { padding: 60px 0; }
+  .page-header { padding-top: calc(var(--nav-height) + 20px); height: 40vh; min-height: 300px; }
+  
+  /* Typography */
   .hero-title { font-size: 2.5rem; }
-  .section-title { font-size: 2rem; }
+  .section-title { font-size: 2rem !important; }
+  .page-title { font-size: 2.5rem; }
   
+  /* Layout */
   .stats-container {
     flex-direction: column;
     gap: 30px;
   }
   .reveal-text { font-size: 10vw; }
+  
+  /* BMW Scroll Section */
+  .detail-text-container {
+    position: relative;
+    top: auto; left: auto; transform: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  .porsche-container {
+    position: relative;
+    top: auto; right: auto; transform: none;
+    width: 100%;
+    text-align: center;
+  }
+  .wheel-container { width: 80vw; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .contact-info-card { flex-direction: column; text-align: center; }
 }
