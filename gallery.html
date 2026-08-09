@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Z Lab Design</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="loading">
+  <!-- Blurred Background -->
+  <div class="page-background" style="background-image: url('assets/images/ai_premium_detailing.png');"></div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="loader-logo">Z Lab DESIGN</div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        Z Lab Design
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header gsap-reveal"
+    style="background: linear-gradient(to bottom, rgba(5,5,5,0.7), rgba(5,5,5,0.95)), url('assets/images/matte_ppf.jpeg') center/cover no-repeat; padding-top: 180px; padding-bottom: 120px;">
+    <div class="container">
+      <h1 class="page-title" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">The Lab Gallery</h1>
+      <p class="hero-subtitle" style="text-shadow: 1px 1px 5px rgba(0,0,0,0.5);">Visual proof of our meticulous
+        detailing process.</p>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="gallery-grid gsap-stagger">
+        <!-- Gallery Items -->
+        <div class="gallery-item">
+          <img src="assets/images/ceramic_1.jpeg" alt="Ceramic Coating">
+          <div class="gallery-overlay" style="flex-direction: column;">
+            <h3
+              style="color: white; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; text-align: center;">
+              Ceramic Coating</h3>
+            <i class="fas fa-search-plus zoom-icon"></i>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/ceramic_2.jpeg" alt="Ceramic Coating">
+          <div class="gallery-overlay" style="flex-direction: column;">
+            <h3
+              style="color: white; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; text-align: center;">
+              Ceramic Coating</h3>
+            <i class="fas fa-search-plus zoom-icon"></i>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/ceramic_coting.jpeg" alt="Ceramic Coating">
+          <div class="gallery-overlay" style="flex-direction: column;">
+            <h3
+              style="color: white; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; text-align: center;">
+              Ceramic Coating</h3>
+            <i class="fas fa-search-plus zoom-icon"></i>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/ppf.jpeg" alt="PPF Installation">
+          <div class="gallery-overlay" style="flex-direction: column;">
+            <h3
+              style="color: white; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; text-align: center;">
+              Paint Protection Film</h3>
+            <i class="fas fa-search-plus zoom-icon"></i>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/ppf_2.jpeg" alt="PPF Detail">
+          <div class="gallery-overlay" style="flex-direction: column;">
+            <h3
+              style="color: white; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; text-align: center;">
+              Paint Protection Film</h3>
+            <i class="fas fa-search-plus zoom-icon"></i>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/matte_ppf.jpeg" alt="Matte PPF">
+          <div class="gallery-overlay" style="flex-direction: column;">
+            <h3
+              style="color: white; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; text-align: center;">
+              Matte PPF</h3>
+            <i class="fas fa-search-plus zoom-icon"></i>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/carwash.jpeg" alt="Car Wash">
+          <div class="gallery-overlay" style="flex-direction: column;">
+            <h3
+              style="color: white; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; text-align: center;">
+              Car Wash</h3>
+            <i class="fas fa-search-plus zoom-icon"></i>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/bodyshop.jpeg" alt="Bodyshop">
+          <div class="gallery-overlay" style="flex-direction: column;">
+            <h3
+              style="color: white; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; text-align: center;">
+              Bodyshop</h3>
+            <i class="fas fa-search-plus zoom-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox (Hidden by default) -->
+  <div class="lightbox">
+    <button class="lightbox-close"><i class="fas fa-times"></i></button>
+    <img src="" alt="Enlarged" class="lightbox-content">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="nav-logo" style="margin-bottom: 20px;">Z Lab <span>DESIGN</span></div>
+          <p style="color: var(--text-muted);">Elevating automotive aesthetics through precision detailing and premium
+            protection.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-links" style="margin-bottom: 25px;">
+            <a href="https://www.instagram.com/zlabdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <h4 style="margin-bottom: 10px; font-size: 1.1rem; color: #fff;">Visit Us</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">
+            Plot No. 335, opposite St.Teresa School, Shakti Khand III, Indirapuram, Ghaziabad, Uttar Pradesh 201014
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Z Lab Design. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

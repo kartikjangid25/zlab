@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z Lab Design | Premium Car Detailing</title>
+  <meta name="description" content="Modern, premium car detailing services by Z Lab Design.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="loading">
+
+  <!-- Persistent Video Background -->
+  <video autoplay muted loop playsinline
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: 0; opacity: 0.2; pointer-events: none; filter: brightness(0.6);">
+    <source src="assets/videos/ppf_video.mp4" type="video/mp4">
+  </video>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="loader-logo">Z Lab DESIGN</div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        Z Lab Design
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/videos/SUV_showcase_in_car_showroom.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Perfection in Every Detail</h1>
+      <p class="hero-subtitle">Premium automotive styling & protection by Z Lab Design.</p>
+      <a href="services.html" class="btn btn-primary hero-cta">Book a Detail</a>
+    </div>
+  </header>
+
+  <!-- Signature Scroll Animation -->
+  <section class="scroll-section">
+    <div class="detail-text-container">
+      <h2 class="detail-title">Precision Meets Protection</h2>
+      <p class="detail-desc">At Z Lab Design, we don't just detail cars. We re-engineer the aesthetic experience of your
+        vehicle. Utilizing cutting-edge nano-technology and M-inspired precision, we deliver a flawless finish that
+        protects and dominates the road.</p>
+    </div>
+    <div class="porsche-container">
+      <img src="assets/images/porshe.png" alt="Porsche" style="width: 100%; height: auto; object-fit: contain;">
+    </div>
+    <div class="wheel-container">
+      <img src="assets/images/bmw_tire.png" alt="BMW Wheel" class="wheel-img">
+    </div>
+    <div class="reveal-text-container">
+      <div class="reveal-text">Z Lab Design</div>
+    </div>
+  </section>
+
+  <!-- Our Process Section (replaces pinned scroll gap) -->
+  <section class="section section-dark" style="overflow:hidden; position:relative;">
+    <!-- Decorative tyre in background -->
+    <div
+      style="position:absolute; right:-80px; top:50%; transform:translateY(-50%); width:420px; opacity:0.07; pointer-events:none; z-index:0;">
+      <img src="assets/images/bmw_tire.png" alt="" style="width:100%; animation: slowSpin 20s linear infinite;">
+    </div>
+
+    <div class="container" style="position:relative; z-index:1;">
+      <div class="section-header gsap-reveal">
+        <h2 class="section-title">Our Process</h2>
+        <p class="section-subtitle">Every vehicle treated with a proven, meticulous 4-step system.</p>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:30px;"
+        class="gsap-stagger">
+
+        <div
+          style="text-align:center; padding:35px 25px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:12px; position:relative;">
+          <div
+            style="width:56px; height:56px; border-radius:50%; background: var(--accent-blue); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:1.4rem; font-weight:800; color:#fff;">
+            01</div>
+          <h3 style="font-size:1.1rem; margin-bottom:12px; color:var(--text-light);">Decontamination</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;">Full wash, foam pre-soak, tar remover,
+            Iron-X fallout removal and clay bar treatment to strip every contaminant.</p>
+        </div>
+
+        <div
+          style="text-align:center; padding:35px 25px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:12px;">
+          <div
+            style="width:56px; height:56px; border-radius:50%; background: var(--accent-blue); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:1.4rem; font-weight:800; color:#fff;">
+            02</div>
+          <h3 style="font-size:1.1rem; margin-bottom:12px; color:var(--text-light);">Paint Correction</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;">Multi-stage machine polishing with 3M
+            Perfect-It compounds and precision cutting pads to eliminate swirls and scratches.</p>
+        </div>
+
+        <div
+          style="text-align:center; padding:35px 25px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:12px;">
+          <div
+            style="width:56px; height:56px; border-radius:50%; background: var(--accent-blue); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:1.4rem; font-weight:800; color:#fff;">
+            03</div>
+          <h3 style="font-size:1.1rem; margin-bottom:12px; color:var(--text-light);">Ceramic Coating</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;">Application of nano-ceramic or
+            graphene coating for a glass-hard, hydrophobic shield that lasts years.</p>
+        </div>
+
+        <div
+          style="text-align:center; padding:35px 25px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:12px;">
+          <div
+            style="width:56px; height:56px; border-radius:50%; background: var(--accent-blue); display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:1.4rem; font-weight:800; color:#fff;">
+            04</div>
+          <h3 style="font-size:1.1rem; margin-bottom:12px; color:var(--text-light);">Final Inspection</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.7;">Thorough inspection under specialist
+            lighting, interior dressing and a full quality-control check before handover.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="glow-divider"></div>
+
+  <!-- Why Choose Us -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header gsap-reveal">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-subtitle">The standard for automotive excellence.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-content text-center" style="text-align: center;">
+            <i class="fas fa-gem" style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 20px;"></i>
+            <h3 class="card-title">Premium Products</h3>
+            <p class="card-desc">We use only industry-leading compounds, coatings, and tools for a flawless finish.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content text-center" style="text-align: center;">
+            <i class="fas fa-award" style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 20px;"></i>
+            <h3 class="card-title">Expert Craftsmanship</h3>
+            <p class="card-desc">Years of meticulous experience ensures your vehicle is in the best hands.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content text-center" style="text-align: center;">
+            <i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 20px;"></i>
+            <h3 class="card-title">Ultimate Protection</h3>
+            <p class="card-desc">Nano-ceramic technology to protect your paint and interior for years to come.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="glow-divider"></div>
+
+  <!-- Premium Products Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Premium Products</h2>
+        <p class="section-subtitle">The industry-leading arsenal we use to perfect your vehicle.</p>
+      </div>
+
+      <div class="premium-feature-container">
+        <!-- LEFT SIDE: Text Slideshow -->
+        <div class="premium-text-slider">
+
+          <!-- Coatings (ML) -->
+          <div class="premium-slide active">
+            <h3 class="premium-title">Advanced Coatings (ML)</h3>
+            <ul class="service-items" style="padding-left: 0;">
+              <li>Nano / Basic Ceramic Coating</li>
+              <li>Ceramic | Graphene Coating</li>
+              <li>Glass Coating</li>
+              <li>Leather Coating</li>
+            </ul>
+          </div>
+
+          <!-- Cleaners & Prep -->
+          <div class="premium-slide">
+            <h3 class="premium-title">Cleaners & Prep</h3>
+            <ul class="service-items" style="padding-left: 0;">
+              <li>APC (All Purpose Cleaner)</li>
+              <li>Degreaser</li>
+              <li>Shampoo</li>
+              <li>Tar Cleaner</li>
+              <li>IPA</li>
+              <li>Ironx</li>
+            </ul>
+          </div>
+
+          <!-- Dressings (Ltr) -->
+          <div class="premium-slide">
+            <h3 class="premium-title">Dressings (All in Ltr)</h3>
+            <ul class="service-items" style="padding-left: 0;">
+              <li>Engine Dressing</li>
+              <li>Interior Dressing</li>
+            </ul>
+          </div>
+
+          <!-- Compounds & Waxes -->
+          <div class="premium-slide">
+            <h3 class="premium-title">Compounds & Waxes</h3>
+            <ul class="service-items" style="padding-left: 0;">
+              <li>Compounds</li>
+              <li>3M Perfect It</li>
+              <li>Glazing</li>
+              <li>Wax</li>
+            </ul>
+          </div>
+
+          <!-- Pads & Equipment (Qty) -->
+          <div class="premium-slide">
+            <h3 class="premium-title">Pads & Equipment (In Qty)</h3>
+            <ul class="service-items" style="padding-left: 0;">
+              <li>Applicator Pad</li>
+              <li>Wax Applicator</li>
+              <li>Cutting Pad</li>
+              <li>Polishing Pad</li>
+            </ul>
+          </div>
+
+          <!-- Accessories -->
+          <div class="premium-slide">
+            <h3 class="premium-title">Accessories</h3>
+            <ul class="service-items" style="padding-left: 0;">
+              <li>Paper Mat</li>
+              <li>Microfiber Cloth</li>
+              <li>Suede Cloth</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: Images -->
+        <div class="premium-image-slider">
+          <img src="assets/images/ceramic_1.jpeg" alt="Coatings" class="premium-img active">
+          <img src="assets/images/carwash.jpeg" alt="Cleaners" class="premium-img">
+          <img src="assets/images/ceramic_2.jpeg" alt="Dressings" class="premium-img">
+          <img src="assets/images/bodyshop.jpeg" alt="Compounds" class="premium-img">
+          <img src="assets/images/ceramic_coting.jpeg" alt="Equipment" class="premium-img">
+          <img src="assets/images/ppf.jpeg" alt="Accessories" class="premium-img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="glow-divider"></div>
+
+  <!-- Testimonials -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="grid-3 gsap-stagger">
+        <div class="card"
+          style="padding: 30px; text-align: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+          <div style="color: #ffd700; margin-bottom: 15px; font-size: 1.2rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="card-desc">"Incredible attention to detail. My car looks better than when I bought it!"</p>
+          <h4 style="color: var(--accent-blue);">— Michael T.</h4>
+        </div>
+        <div class="card"
+          style="padding: 30px; text-align: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+          <div style="color: #ffd700; margin-bottom: 15px; font-size: 1.2rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="card-desc">"The ceramic coating they applied is flawless. Water literally beads right off."</p>
+          <h4 style="color: var(--accent-blue);">— Sarah L.</h4>
+        </div>
+        <div class="card"
+          style="padding: 30px; text-align: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+          <div style="color: #ffd700; margin-bottom: 15px; font-size: 1.2rem;">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="card-desc">"Professional, fast, and high-quality. The interior detailing made it smell like a
+            brand
+            new car."</p>
+          <h4 style="color: var(--accent-blue);">— David W.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="glow-divider"></div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="nav-logo" style="margin-bottom: 20px;">Z Lab <span>DESIGN</span></div>
+          <p style="color: var(--text-muted);">Elevating automotive aesthetics through precision detailing and premium
+            protection.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-links" style="margin-bottom: 25px;">
+            <a href="https://www.instagram.com/zlabdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <h4 style="margin-bottom: 10px; font-size: 1.1rem; color: #fff;">Visit Us</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">
+            Plot No. 335, opposite St.Teresa School, Shakti Khand III, Indirapuram, Ghaziabad, Uttar Pradesh 201014
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Z Lab Design. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
