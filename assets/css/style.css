@@ -263,9 +263,7 @@ img {
 }
 
 .nav-logo span {
-  background: linear-gradient(90deg, var(--accent-blue), var(--accent-blue-dark), var(--accent-red));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff8c00;
   display: inline-block;
 }
 
@@ -389,7 +387,7 @@ img {
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: var(--chrome);
+  color: #ff8c00; /* Vibrant Orange */
   margin-bottom: 40px;
   font-weight: 300;
   opacity: 0;
